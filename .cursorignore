@@ -1,0 +1,6 @@
+groundtruth/
+groundtruth/*
+csv/
+csv/*
+sast_report/
+sast_report/*

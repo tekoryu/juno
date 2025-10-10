@@ -1,0 +1,7 @@
+id,vulnerability name,severity,cwe code,location
+1,SQL Injection,CRITICAL,CWE-89,sqli/dao/student.py:45
+2,Outdated and Vulnerable Dependencies,HIGH,CWE-937,requirements.txt
+3,Cross-Site Scripting (XSS),HIGH,CWE-79,sqli/app.py:28
+4,Weak Password Hashing,HIGH,CWE-327,sqli/dao/user.py:45
+5,Missing CSRF Protection,HIGH,CWE-352,sqli/app.py:22
+6,Hardcoded Credentials,MEDIUM,CWE-798,config/dev.yaml

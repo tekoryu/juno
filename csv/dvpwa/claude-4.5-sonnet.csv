@@ -1,0 +1,12 @@
+id,vulnerability_name,severity,cwe_code,location
+1,SQL Injection,CRITICAL,CWE-89,sqli/dao/student.py:42-45
+2,Session Fixation,HIGH,N/A,sqli/views.py:42; sqli/middlewares.py:20
+3,Stored Cross-Site Scripting (XSS),HIGH,CWE-79,sqli/app.py:35; sqli/views.py:121-129
+4,Weak Password Hashing (MD5),HIGH,CWE-327,sqli/dao/user.py:41
+5,Cross-Site Request Forgery (CSRF),HIGH,N/A,sqli/app.py:27
+6,Missing Authorization Checks,MEDIUM,N/A,Multiple endpoints
+7,No Rate Limiting,MEDIUM,N/A,sqli/views.py:33-45
+8,Debug Mode Enabled,LOW,N/A,sqli/app.py:24
+9,Docker Security Misconfigurations,LOW,CWE-732,docker-compose.yml:11
+10,Regular Expression DoS (ReDoS),LOW,CWE-1333,sqli/static/js/materialize.js:565
+11,Insecure Format Strings,INFO,CWE-134,sqli/static/js/materialize.js:645;661;699

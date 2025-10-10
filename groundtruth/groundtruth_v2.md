@@ -1,0 +1,21 @@
+# Ground Truth v2
+
+This file contains a comprehensive list of vulnerabilities found in the project.
+
+| ID | Vulnerability Name                | Severity | CWE Code | Location                                      |
+|----|-----------------------------------|----------|----------|-----------------------------------------------|
+| 1  | SQL Injection                     | CRITICAL | CWE-89   | `sqli/dao/student.py:45`                      |
+| 2  | Vulnerable Python Dependencies    | HIGH     | CWE-937  | `requirements.txt`                            |
+| 3  | Stored Cross-Site Scripting (XSS) | HIGH     | CWE-79   | `sqli/app.py:28`                              |
+| 4  | Weak Password Hashing (MD5)       | HIGH     | CWE-327  | `sqli/dao/user.py:45`                         |
+| 5  | Missing CSRF Protection           | HIGH     | CWE-352  | `sqli/app.py:22`                              |
+| 6  | Session Fixation                  | HIGH     | CWE-384  | `sqli/middlewares.py:20`, `sqli/views.py:42`    |
+| 7  | Missing Authorization Checks      | MEDIUM   | CWE-862  | Multiple endpoints in `sqli/views.py`         |
+| 8  | No Rate Limiting                  | MEDIUM   | CWE-770  | `sqli/views.py:33-45`                         |
+| 9  | Hardcoded Credentials             | MEDIUM   | CWE-798  | `config/dev.yaml`                             |
+| 10 | Debug Mode Enabled                | LOW      | CWE-200  | `sqli/app.py:24`                              |
+| 11 | Docker Security Misconfigurations | LOW      | CWE-732  | `docker-compose.yml`                          |
+| 12 | Regular Expression DoS (ReDoS)    | LOW      | CWE-1333 | `sqli/static/js/materialize.js:565`           |
+| 13 | Insecure Format Strings           | INFO     | CWE-134  | `sqli/static/js/materialize.js:645,661,699`   |
+
+*Note: The CWE codes are best-effort and may not be fully accurate. The original `B...` and `S...` columns have been omitted as the tools to generate them were not used.*
