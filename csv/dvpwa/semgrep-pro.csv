@@ -1,0 +1,2 @@
+id,vulnerability_name,severity,cwe_code,location
+1,"yaml.docker-compose.security.no-new-privileges.no-new-privileges",WARNING,CWE-732,docker-compose.yml:11

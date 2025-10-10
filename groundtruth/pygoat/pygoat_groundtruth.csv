@@ -1,0 +1,25 @@
+id,vulnerability name,severity,cwe code,location
+PYG-GT-001,SQL Injection,High,CWE-89,src/pygoat/introduction/views.py:158
+PYG-GT-002,OS Command Injection,High,CWE-78,src/pygoat/introduction/views.py:240
+PYG-GT-003,Code Injection,High,CWE-94,src/pygoat/introduction/views.py:263
+PYG-GT-004,Broken Authentication,High,CWE-287,src/pygoat/introduction/views.py:298
+PYG-GT-005,Sensitive Data Exposure,High,CWE-200,src/pygoat/pygoat/settings.py:25
+PYG-GT-006,XML External Entity (XXE) Injection,High,CWE-611,src/pygoat/introduction/views.py:135
+PYG-GT-007,Broken Access Control,High,CWE-287,src/pygoat/introduction/views.py:193
+PYG-GT-008,Security Misconfiguration,Medium,CWE-2,src/pygoat/introduction/views.py:333
+PYG-GT-009,Cross-Site Scripting (XSS),Medium,CWE-79,src/pygoat/introduction/views.py:88
+PYG-GT-010,Insecure Deserialization,High,CWE-502,src/pygoat/introduction/views.py:118
+PYG-GT-011,Using Components with Known Vulnerabilities,High,CWE-937,src/pygoat/introduction/views.py:349
+PYG-GT-012,Insufficient Logging & Monitoring,Medium,CWE-778,src/pygoat/introduction/views.py:401
+PYG-GT-013,Insecure Design,Medium,CWE-1127,src/pygoat/introduction/views.py:440
+PYG-GT-014,Server-Side Request Forgery (SSRF),High,CWE-918,src/pygoat/introduction/views.py:480
+PYG-GT-015,Broken Access Control,Medium,CWE-287,src/pygoat/introduction/views.py:388
+PYG-GT-016,Broken Access Control,High,CWE-284,src/pygoat/introduction/views.py:418
+PYG-GT-017,Cryptographic Failure,High,CWE-327,src/pygoat/introduction/views.py:550
+PYG-GT-018,Cryptographic Failure,Medium,CWE-327,src/pygoat/introduction/views.py:567
+PYG-GT-019,Cryptographic Failure,Medium,CWE-319,src/pygoat/introduction/views.py:584
+PYG-GT-020,Server-Side Template Injection,High,CWE-94,src/pygoat/introduction/views.py:526
+PYG-GT-021,Using Components with Known Vulnerabilities,High,CWE-937,src/pygoat/introduction/views.py:369
+PYG-GT-022,Software and Data Integrity Failure,Medium,CWE-494,src/pygoat/introduction/views.py:684
+PYG-GT-023,Insufficient Logging & Monitoring,Medium,CWE-778,src/pygoat/introduction/views.py:421
+PYG-GT-024,Server-Side Request Forgery (SSRF),High,CWE-918,src/pygoat/introduction/views.py:509

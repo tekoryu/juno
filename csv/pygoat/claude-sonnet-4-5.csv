@@ -1,0 +1,26 @@
+id,vulnerability_name,severity,cwe_code,location
+1,SQL Injection,CRITICAL,CWE-89,introduction/views.py:157
+2,SQL Injection,CRITICAL,CWE-89,introduction/views.py:857
+3,Command Injection,CRITICAL,CWE-78,introduction/views.py:417-427
+4,Code Injection via eval(),CRITICAL,CWE-94,introduction/views.py:453
+5,Insecure Deserialization (Pickle),CRITICAL,CWE-502,introduction/views.py:213
+6,Server-Side Template Injection (SSTI),CRITICAL,CWE-94,introduction/views.py:977-993
+7,XML External Entity (XXE) Injection,HIGH,CWE-611,introduction/views.py:250-264
+8,Server-Side Request Forgery (SSRF),HIGH,CWE-918,introduction/views.py:956
+9,Cross-Site Scripting (XSS),HIGH,CWE-79,introduction/views.py:95-101
+10,Insecure YAML Deserialization,HIGH,CWE-502,introduction/views.py:553
+11,Path Traversal,HIGH,CWE-22,introduction/views.py:919
+12,Hardcoded Secret Key,HIGH,CWE-798,pygoat/settings.py:25
+13,Hardcoded Credentials,HIGH,CWE-798,introduction/views.py:759;824;826;1065
+14,Weak Cryptographic Hash (MD5),HIGH,CWE-327,introduction/views.py:1019
+15,ImageMath Code Execution,HIGH,CWE-94,introduction/views.py:581
+16,Debug Mode Enabled,MEDIUM,CWE-489,pygoat/settings.py:30
+17,Insecure Cookie Configuration,MEDIUM,CWE-614,introduction/views.py:285
+18,Broken Access Control,MEDIUM,CWE-284,introduction/views.py:341;751;833
+19,CSRF Protection Disabled,MEDIUM,CWE-352,introduction/views.py:238;249;329;408;543
+20,Weak OTP Implementation,MEDIUM,CWE-330,introduction/views.py:489
+21,Log Injection,MEDIUM,CWE-117,introduction/views.py:647;661;665
+22,Custom Weak Hash Function,MEDIUM,CWE-327,introduction/utility.py:58
+23,Hardcoded Sensitive Data,LOW,CWE-798,pygoat/settings.py:27;171
+24,Predictable Session Tokens,LOW,CWE-330,introduction/views.py:1183
+25,Information Disclosure via Debug Logs,LOW,CWE-209,introduction/views.py:630-632

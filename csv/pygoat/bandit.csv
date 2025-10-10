@@ -1,0 +1,60 @@
+id,vulnerability_name,severity,cwe_code,location
+1,"Try, Except, Pass detected.",LOW,CWE-703,./challenge/management/commands/populate_challenge.py:17
+2,"Consider possible security implications associated with the subprocess module.",LOW,CWE-78,./challenge/views.py:5
+3,"Try, Except, Pass detected.",LOW,CWE-703,./challenge/views.py:42
+4,"subprocess call - check for execution of untrusted input.",LOW,CWE-78,./challenge/views.py:50
+5,"subprocess call - check for execution of untrusted input.",LOW,CWE-78,./challenge/views.py:81
+6,"Possible hardcoded password: 'your-secret-key-here'",LOW,CWE-259,./dockerized_labs/broken_auth_lab/app.py:8
+7,"Use of weak MD5 hash for security. Consider usedforsecurity=False",HIGH,CWE-327,./dockerized_labs/broken_auth_lab/app.py:86
+8,"Try, Except, Pass detected.",LOW,CWE-703,./dockerized_labs/broken_auth_lab/app.py:117
+9,"A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code.",HIGH,CWE-94,./dockerized_labs/broken_auth_lab/app.py:123
+10,"Possible binding to all interfaces.",MEDIUM,CWE-605,./dockerized_labs/broken_auth_lab/app.py:123
+11,"Consider possible security implications associated with pickle module.",LOW,CWE-502,./dockerized_labs/insec_des_lab/main.py:2
+12,"Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.",MEDIUM,CWE-502,./dockerized_labs/insec_des_lab/main.py:36
+13,"Possible binding to all interfaces.",MEDIUM,CWE-605,./dockerized_labs/insec_des_lab/main.py:51
+14,"Standard pseudo-random generators are not suitable for security/cryptographic purposes.",LOW,CWE-330,./dockerized_labs/sensitive_data_exposure/dataexposure/views.py:42
+15,"Possible hardcoded password: 'django-insecure-key-for-demonstration-only'",LOW,CWE-259,./dockerized_labs/sensitive_data_exposure/sensitive_data_lab/settings.py:8
+16,"Consider possible security implications associated with the subprocess module.",LOW,CWE-78,./introduction/lab_code/test.py:18
+17,"Use of unsafe yaml load. Allows instantiation of arbitrary objects. Consider yaml.safe_load().",MEDIUM,CWE-20,./introduction/lab_code/test.py:23
+18,"Consider possible security implications associated with the subprocess module.",LOW,CWE-78,./introduction/mitre.py:3
+19,"Use of weak MD5 hash for security. Consider usedforsecurity=False",HIGH,CWE-327,./introduction/mitre.py:161
+20,"Use of possibly insecure function - consider using safer ast.literal_eval.",MEDIUM,CWE-78,./introduction/mitre.py:218
+21,"subprocess call with shell=True identified, security issue.",HIGH,CWE-78,./introduction/mitre.py:233
+22,"Call to requests without timeout",MEDIUM,CWE-400,./introduction/playground/A6/soln.py:9
+23,"Call to requests without timeout",MEDIUM,CWE-400,./introduction/playground/A6/utility.py:9
+24,"Possible hardcoded password: 'admin'",LOW,CWE-259,./introduction/playground/A9/api.py:17
+25,"Possible hardcoded password: 'admin'",LOW,CWE-259,./introduction/playground/A9/archive.py:17
+26,"Consider possible security implications associated with pickle module.",LOW,CWE-502,./introduction/views.py:7
+27,"Consider possible security implications associated with the subprocess module.",LOW,CWE-78,./introduction/views.py:11
+28,"Using START_ELEMENT to parse untrusted XML data is known to be vulnerable to XML attacks. Replace START_ELEMENT with the equivalent defusedxml package, or make sure defusedxml.defuse_stdlib() is called.",LOW,CWE-20,./introduction/views.py:17
+29,"Using make_parser to parse untrusted XML data is known to be vulnerable to XML attacks. Replace make_parser with the equivalent defusedxml package, or make sure defusedxml.defuse_stdlib() is called.",LOW,CWE-20,./introduction/views.py:18
+30,"Using feature_external_ges to parse untrusted XML data is known to be vulnerable to XML attacks. Replace feature_external_ges with the equivalent defusedxml package, or make sure defusedxml.defuse_stdlib() is called.",LOW,CWE-20,./introduction/views.py:19
+31,"Possible SQL injection vector through string-based query construction.",MEDIUM,CWE-89,./introduction/views.py:157
+32,"Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.",MEDIUM,CWE-502,./introduction/views.py:213
+33,"Using xml.sax.make_parser to parse untrusted XML data is known to be vulnerable to XML attacks. Replace xml.sax.make_parser with its defusedxml equivalent function or make sure defusedxml.defuse_stdlib() is called",MEDIUM,CWE-20,./introduction/views.py:252
+34,"Using xml.dom.pulldom.parseString to parse untrusted XML data is known to be vulnerable to XML attacks. Replace xml.dom.pulldom.parseString with its defusedxml equivalent function or make sure defusedxml.defuse_stdlib() is called",MEDIUM,CWE-20,./introduction/views.py:254
+35,"subprocess call with shell=True identified, security issue.",HIGH,CWE-78,./introduction/views.py:425
+36,"Use of possibly insecure function - consider using safer ast.literal_eval.",MEDIUM,CWE-78,./introduction/views.py:453
+37,"Standard pseudo-random generators are not suitable for security/cryptographic purposes.",LOW,CWE-330,./introduction/views.py:489
+38,"Use of unsafe yaml load. Allows instantiation of arbitrary objects. Consider yaml.safe_load().",MEDIUM,CWE-20,./introduction/views.py:553
+39,"Standard pseudo-random generators are not suitable for security/cryptographic purposes.",LOW,CWE-330,./introduction/views.py:673
+40,"Possible hardcoded password: 'jacktheripper'",LOW,CWE-259,./introduction/views.py:759
+41,"Possible hardcoded password: 'jacktheripper'",LOW,CWE-259,./introduction/views.py:799
+42,"Possible hardcoded password: 'reaper'",LOW,CWE-259,./introduction/views.py:824
+43,"Possible hardcoded password: 'admin_pass'",LOW,CWE-259,./introduction/views.py:826
+44,"Possible SQL injection vector through string-based query construction.",MEDIUM,CWE-89,./introduction/views.py:857
+45,"Possible hardcoded password: '65079b006e85a7e798abecb99e47c154'",LOW,CWE-259,./introduction/views.py:859
+46,"Possible hardcoded password: 'jack'",LOW,CWE-259,./introduction/views.py:861
+47,"Possible hardcoded password: 'b4f945433ea4c369c12741f62a23ccc0'",LOW,CWE-259,./introduction/views.py:863
+48,"Possible hardcoded password: 'bullseye'",LOW,CWE-259,./introduction/views.py:865
+49,"Call to requests without timeout",MEDIUM,CWE-400,./introduction/views.py:956
+50,"Requests call with verify=False disabling SSL certificate checks, security issue.",MEDIUM,CWE-295,./introduction/views.py:956
+51,"Use of weak MD5 hash for security. Consider usedforsecurity=False",HIGH,CWE-327,./introduction/views.py:1019
+52,"Possible hardcoded password: 'admin'",LOW,CWE-259,./introduction/views.py:1065
+53,"Standard pseudo-random generators are not suitable for security/cryptographic purposes.",LOW,CWE-330,./introduction/views.py:1183
+54,"Possible hardcoded password: 'django-insecure-q@n51!*s2v(v&s1&3*2y=u&b&k(f^o0a5^#a0b1@^t@#8z(a^s'",LOW,CWE-259,./pygoat/settings.py:25
+55,"The DEBUG flag is set to True.",LOW,CWE-215,./pygoat/settings.py:30
+56,"Consider possible security implications associated with the subprocess module.",LOW,CWE-78,./uninstaller.py:2
+57,"Consider possible security implications associated with the os module.",LOW,CWE-78,./uninstaller.py:1
+58,"subprocess call - check for execution of untrusted input.",LOW,CWE-78,./uninstaller.py:101
+59,"subprocess call with absolute path.",LOW,CWE-78,./uninstaller.py:101

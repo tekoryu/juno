@@ -1,0 +1,41 @@
+id,vulnerability name,severity,cwe code,location
+PYGOAT-001,Django DEBUG enabled,Medium,CWE-215,/home/tekoryu/development/juno/src/pygoat/pygoat/settings.py:30
+PYGOAT-002,Hardcoded SECRET_KEY,High,CWE-321,/home/tekoryu/development/juno/src/pygoat/pygoat/settings.py:25
+PYGOAT-003,Sensitive data hardcoded,Medium,CWE-200,/home/tekoryu/development/juno/src/pygoat/pygoat/settings.py:27
+PYGOAT-004,CSRF protection disabled on view xxe_see,High,CWE-352,/home/tekoryu/development/juno/src/pygoat/introduction/views.py:238
+PYGOAT-005,CSRF protection disabled on view xxe_parse,High,CWE-352,/home/tekoryu/development/juno/src/pygoat/introduction/views.py:249
+PYGOAT-006,CSRF protection disabled on view ba,High,CWE-352,/home/tekoryu/development/juno/src/pygoat/introduction/views.py:329
+PYGOAT-007,CSRF protection disabled on view ba_lab,High,CWE-352,/home/tekoryu/development/juno/src/pygoat/introduction/views.py:336
+PYGOAT-008,CSRF protection disabled on view cmd_lab,High,CWE-352,/home/tekoryu/development/juno/src/pygoat/introduction/views.py:409
+PYGOAT-009,CSRF protection disabled on view cmd_lab2,High,CWE-352,/home/tekoryu/development/juno/src/pygoat/introduction/views.py:446
+PYGOAT-010,CSRF protection disabled on view Otp,High,CWE-352,/home/tekoryu/development/juno/src/pygoat/introduction/views.py:486
+PYGOAT-011,CSRF protection disabled on view a9_lab,High,CWE-352,/home/tekoryu/development/juno/src/pygoat/introduction/views.py:544
+PYGOAT-012,CSRF protection disabled on view a9_lab2,High,CWE-352,/home/tekoryu/development/juno/src/pygoat/introduction/views.py:567
+PYGOAT-013,CSRF protection disabled on view a1_broken_access,High,CWE-352,/home/tekoryu/development/juno/src/pygoat/introduction/views.py:731
+PYGOAT-014,CSRF protection disabled on view a1_broken_access_lab_1,High,CWE-352,/home/tekoryu/development/juno/src/pygoat/introduction/views.py:740
+PYGOAT-015,CSRF protection disabled on view a1_broken_access_lab_2,High,CWE-352,/home/tekoryu/development/juno/src/pygoat/introduction/views.py:776
+PYGOAT-016,CSRF protection disabled on view injection,High,CWE-352,/home/tekoryu/development/juno/src/pygoat/introduction/views.py:839
+PYGOAT-017,CSRF protection disabled on view injection_sql_lab,High,CWE-352,/home/tekoryu/development/juno/src/pygoat/introduction/views.py:848
+PYGOAT-018,CSRF protection disabled on view auth_failure_lab3,High,CWE-352,/home/tekoryu/development/juno/src/pygoat/introduction/views.py:1172
+PYGOAT-019,CSRF protection disabled on API ssrf_code_checker,High,CWE-352,/home/tekoryu/development/juno/src/pygoat/introduction/apis.py:23
+PYGOAT-020,CSRF protection disabled on API A7_disscussion_api,High,CWE-352,/home/tekoryu/development/juno/src/pygoat/introduction/apis.py:94
+PYGOAT-021,CSRF protection disabled on API A6_disscussion_api,High,CWE-352,/home/tekoryu/development/juno/src/pygoat/introduction/apis.py:113
+PYGOAT-022,CSRF protection disabled on API A6_disscussion_api_2,High,CWE-352,/home/tekoryu/development/juno/src/pygoat/introduction/apis.py:126
+PYGOAT-023,CSRF protection disabled on view csrf_transfer_monei,High,CWE-352,/home/tekoryu/development/juno/src/pygoat/introduction/mitre.py:178
+PYGOAT-024,CSRF protection disabled on API mitre_lab_25_api,High,CWE-352,/home/tekoryu/development/juno/src/pygoat/introduction/mitre.py:215
+PYGOAT-025,CSRF protection disabled on API mitre_lab_17_api,High,CWE-352,/home/tekoryu/development/juno/src/pygoat/introduction/mitre.py:238
+PYGOAT-026,SQL Injection via objects.raw(sql_query),Critical,CWE-89,/home/tekoryu/development/juno/src/pygoat/introduction/views.py:161
+PYGOAT-027,SQL Injection via objects.raw(sql_query),Critical,CWE-89,/home/tekoryu/development/juno/src/pygoat/introduction/views.py:871
+PYGOAT-028,Code injection via eval on user input,Critical,CWE-94,/home/tekoryu/development/juno/src/pygoat/introduction/views.py:453
+PYGOAT-029,Code injection via eval on user input,Critical,CWE-94,/home/tekoryu/development/juno/src/pygoat/introduction/mitre.py:218
+PYGOAT-030,Command injection via subprocess with shell=True,Critical,CWE-78,/home/tekoryu/development/juno/src/pygoat/introduction/views.py:423
+PYGOAT-031,Command execution helper uses shell=True,High,CWE-78,/home/tekoryu/development/juno/src/pygoat/introduction/mitre.py:233
+PYGOAT-032,Unsafe YAML load (yaml.load),High,CWE-502,/home/tekoryu/development/juno/src/pygoat/introduction/views.py:553
+PYGOAT-033,Insecure deserialization via pickle.loads,Critical,CWE-502,/home/tekoryu/development/juno/src/pygoat/introduction/views.py:213
+PYGOAT-034,Insecure deserialization via pickle.loads,Critical,CWE-502,/home/tekoryu/development/juno/src/pygoat/dockerized_labs/insec_des_lab/main.py:36
+PYGOAT-035,SSRF via requests.get on user-controlled URL,High,CWE-918,/home/tekoryu/development/juno/src/pygoat/introduction/views.py:956
+PYGOAT-036,XSS via unsafe template filter on query,High,CWE-79,/home/tekoryu/development/juno/src/pygoat/introduction/templates/Lab/XSS/xss_lab.html:27
+PYGOAT-037,XSS via unsafe template filter on username,High,CWE-79,/home/tekoryu/development/juno/src/pygoat/introduction/templates/Lab/XSS/xss_lab_2.html:20
+PYGOAT-038,HTML injection via rendering response safe,High,CWE-79,/home/tekoryu/development/juno/src/pygoat/introduction/templates/Lab/ssrf/ssrf_lab2.html:23
+PYGOAT-039,XSS risk from safe filter on username,High,CWE-79,/home/tekoryu/development/juno/src/pygoat/introduction/templates/Lab_2021/A8_software_and_data_integrity_failure/lab2.html:11
+PYGOAT-040,XSS risk from safe filter on login form fields,Medium,CWE-79,/home/tekoryu/development/juno/src/pygoat/dockerized_labs/sensitive_data_exposure/templates/login.html:59

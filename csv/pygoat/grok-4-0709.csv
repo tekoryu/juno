@@ -1,0 +1,11 @@
+id,vulnerability name,severity,cwe code,location
+1,SQL Injection,High,CWE-89,src/pygoat/introduction/views.py:157-161
+2,SQL Injection,High,CWE-89,src/pygoat/introduction/views.py:857-871
+3,Insecure Deserialization,Critical,CWE-502,src/pygoat/dockerized_labs/insec_des_lab/main.py:36
+4,Command Injection,Critical,CWE-78,src/pygoat/introduction/views.py:409-443
+5,Cleartext Storage of Sensitive Information,High,CWE-312,src/pygoat/dockerized_labs/sensitive_data_exposure/dataexposure/models.py:6-7
+6,Use of Hard-coded Credentials,High,CWE-798,src/pygoat/dockerized_labs/broken_auth_lab/app.py:8
+7,Insufficiently Protected Credentials,High,CWE-522,src/pygoat/dockerized_labs/broken_auth_lab/app.py:41
+8,Sensitive Cookie Without Secure Flag,Medium,CWE-614,src/pygoat/introduction/views.py:313
+9,Exposure of Sensitive Information,High,CWE-200,src/pygoat/dockerized_labs/sensitive_data_exposure/dataexposure/views.py:112-132
+10,Use of Weak Hashing Algorithm,Medium,CWE-327,src/pygoat/introduction/mitre.py:161

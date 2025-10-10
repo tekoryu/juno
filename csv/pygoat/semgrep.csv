@@ -1,0 +1,2 @@
+id,vulnerability_name,severity,cwe_code,location
+1,"dockerfile.security.missing-user.missing-user",ERROR,CWE-250,Dockerfile:33

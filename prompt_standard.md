@@ -1,0 +1,1 @@
+Scan @src/pygoat/ project for security flaws. List them in a csv file named `${AI_MODEL}.csv` containing only id,vulnerability name,  severity, cwe code and location. Csv file will be kept in /csv/pygoat.Do not use SAST tools.

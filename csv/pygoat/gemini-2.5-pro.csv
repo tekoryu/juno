@@ -1,0 +1,31 @@
+id,vulnerability name,severity,cwe code,location
+PYG-001,SQL Injection,High,CWE-89,src/pygoat/introduction/views.py:158
+PYG-002,Cross-Site Scripting (XSS),Medium,CWE-79,src/pygoat/introduction/templates/Lab/XSS/xss_lab.html:25
+PYG-003,Insecure Deserialization,High,CWE-502,src/pygoat/introduction/views.py:118
+PYG-004,OS Command Injection,High,CWE-78,src/pygoat/introduction/views.py:240
+PYG-005,Code Injection,High,CWE-94,src/pygoat/introduction/views.py:263
+PYG-006,XML External Entity (XXE) Injection,High,CWE-611,src/pygoat/introduction/views.py:135
+PYG-007,Path Traversal,High,CWE-22,src/pygoat/introduction/views.py:480
+PYG-008,Server-Side Request Forgery (SSRF),High,CWE-918,src/pygoat/introduction/views.py:509
+PYG-009,Broken Access Control,High,CWE-287,src/pygoat/introduction/views.py:193
+PYG-010,Broken Authentication,Medium,CWE-287,src/pygoat/introduction/views.py:388
+PYG-011,Hardcoded Secret Key,Medium,CWE-798,src/pygoat/pygoat/settings.py:21
+PYG-012,Debug Mode Enabled,Medium,CWE-489,src/pygoat/pygoat/settings.py:25
+PYG-013,Hardcoded Sensitive Data,Medium,CWE-798,src/pygoat/pygoat/settings.py:23
+PYG-014,OS Command Injection,High,CWE-78,src/pygoat/challenge/views.py:43
+PYG-015,OS Command Injection,High,CWE-78,src/pygoat/challenge/views.py:65
+PYG-016,Hardcoded Secret Key,Medium,CWE-798,src/pygoat/dockerized_labs/broken_auth_lab/app.py:6
+PYG-017,"Use of Hard-coded, Weak Password",Medium,CWE-798,src/pygoat/dockerized_labs/broken_auth_lab/app.py:10
+PYG-018,"Plaintext Password Storage and Comparison",High,"CWE-256, CWE-522",src/pygoat/dockerized_labs/broken_auth_lab/app.py:29
+PYG-019,Insecure Session Management,High,CWE-384,src/pygoat/dockerized_labs/broken_auth_lab/app.py:32
+PYG-020,Predictable Password Reset Token,High,CWE-340,src/pygoat/dockerized_labs/broken_auth_lab/app.py:70
+PYG-021,Debug Mode Enabled,Medium,CWE-489,src/pygoat/dockerized_labs/broken_auth_lab/app.py:99
+PYG-022,Insecure Deserialization,High,CWE-502,src/pygoat/dockerized_labs/insec_des_lab/main.py:29
+PYG-023,Sensitive Data Exposure,High,CWE-200,"src/pygoat/dockerized_labs/sensitive_data_exposure/dataexposure/views.py:80, src/pygoat/dockerized_labs/sensitive_data_exposure/dataexposure/views.py:100"
+PYG-024,Sensitive Data Exposure in comments,Medium,CWE-200,src/pygoat/dockerized_labs/sensitive_data_exposure/templates/profile.html:80
+PYG-025,Code Injection,High,CWE-94,src/pygoat/introduction/mitre.py:211
+PYG-026,OS Command Injection,High,CWE-78,src/pygoat/introduction/mitre.py:222
+PYG-027,Hardcoded Secret,Medium,CWE-798,src/pygoat/introduction/mitre.py:176
+PYG-028,Use of Insufficiently Random Values,Low,CWE-330,src/pygoat/challenge/models.py:23
+PYG-029,Use of a Broken or Risky Cryptographic Algorithm,Medium,CWE-327,src/pygoat/introduction/utility.py:40
+PYG-030,Use of a Broken or Risky Cryptographic Algorithm,High,CWE-327,src/pygoat/introduction/migrations/0017_cf_user.py:20
