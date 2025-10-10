@@ -1,0 +1,16 @@
+d,vulnerability name,severity,cwe code,location
+1,Disabled Jinja autoescape enables XSS,High,CWE-79,sqli/app.py:33-35
+2,Session cookie missing HttpOnly,High,CWE-1004,sqli/middlewares.py:20-22
+3,CSRF middleware disabled globally,High,CWE-352,sqli/app.py:25-29
+4,Hardcoded database credentials,Medium,CWE-798,config/dev.yaml:1-7
+5,Plain MD5 password hashing,High,CWE-327,sqli/dao/user.py:40-41
+6,SQL injection via string formatting in Student.create,High,CWE-89,sqli/dao/student.py:42-45
+7,Missing authorization on POST /students/,Medium,CWE-285,sqli/views.py:54-58
+8,Missing authorization on POST /courses/,High,CWE-285,sqli/views.py:86-91
+9,Missing authorization on POST evaluate,High,CWE-285,sqli/views.py:134-153
+10,Session cookie missing Secure attribute,Medium,CWE-614,sqli/middlewares.py:20-22
+11,App runs in debug mode,Low,CWE-489,sqli/app.py:24
+12,No brute-force protection or rate limiting on login,Low,CWE-307,sqli/views.py:33-46
+13,Unescaped user content in templates (course and reviews),Medium,CWE-79,sqli/templates/course.jinja2:14-23
+14,Missing HTTP security headers (CSP, X-Frame-Options),Medium,CWE-693,sqli/app.py:23-40
+

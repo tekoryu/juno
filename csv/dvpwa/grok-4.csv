@@ -1,0 +1,15 @@
+d,vulnerability name,severity,cwe code,location
+1,SQL Injection,High,89,src/dvpwa/sqli/dao/student.py:42
+2,Insecure Password Hashing,High,327,src/dvpwa/sqli/dao/user.py:40
+3,Cross-Site Scripting (XSS) via course title,High,79,src/dvpwa/sqli/templates/course.jinja2:14
+4,Cross-Site Scripting (XSS) via course description,High,79,src/dvpwa/sqli/templates/course.jinja2:15
+5,Cross-Site Scripting (XSS) via review text,High,79,src/dvpwa/sqli/templates/course.jinja2:22
+6,Cross-Site Scripting (XSS) via course title in list,High,79,src/dvpwa/sqli/templates/courses.jinja2:17
+7,Cross-Site Scripting (XSS) via course description in list,High,79,src/dvpwa/sqli/templates/courses.jinja2:18
+8,Cross-Site Scripting (XSS) via course title in student results,High,79,src/dvpwa/sqli/templates/student.jinja2:19
+9,Cross-Site Scripting (XSS) via course description in student results,High,79,src/dvpwa/sqli/templates/student.jinja2:20
+10,Cross-Site Scripting (XSS) via course title in review form,High,79,src/dvpwa/sqli/templates/review.jinja2:32
+11,Cross-Site Scripting (XSS) via student name in list,High,79,src/dvpwa/sqli/templates/students.jinja2:16
+12,Missing Authorization for student evaluation,High,862,src/dvpwa/sqli/views.py:135
+13,Missing CSRF Protection,High,352,src/dvpwa/sqli/app.py:27
+14,Autoescape Disabled in Jinja2,High,79,src/dvpwa/sqli/app.py:35

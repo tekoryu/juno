@@ -1,0 +1,3 @@
+id,vulnerability_name,severity,cwe_code,location
+1,"Possible SQL injection vector through string-based query construction.",MEDIUM,CWE-89,sqli/dao/student.py:42
+2,"Use of weak MD5 hash for security. Consider usedforsecurity=False",HIGH,CWE-327,sqli/dao/user.py:41

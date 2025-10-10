@@ -1,0 +1,3 @@
+id,vulnerability_name,severity,cwe_code,location
+1,"Service 'redis' allows for privilege escalation via setuid or setgid binaries. Add 'no-new-privileges:true' in 'security_opt' to prevent this.",WARNING,CWE-732,docker-compose.yml:11
+2,"Service 'redis' is running with a writable root filesystem. This may allow malicious applications to download and run additional payloads, or modify container files. If an application inside a container has to save something temporarily consider using a tmpfs. Add 'read_only: true' to this service to prevent this.",WARNING,CWE-732,docker-compose.yml:11
