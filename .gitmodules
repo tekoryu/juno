@@ -1,0 +1,6 @@
+[submodule "src/dvpwa"]
+	path = src/dvpwa
+	url = https://github.com/anxolerd/dvpwa.git
+[submodule "src/pygoat"]
+	path = src/pygoat
+	url = https://github.com/adeyosemanputra/pygoat.git
